@@ -1,0 +1,8 @@
+#commentsContainer{
+    text-align: start;
+    margin-top: 25px;
+}
+#time {
+    text-align: right;
+    font-size: 80%;
+}
