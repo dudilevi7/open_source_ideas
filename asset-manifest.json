@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/open_source_ideas/static/css/main.c33e7dbc.chunk.css",
+    "main.js": "/open_source_ideas/static/js/main.3145a1c5.chunk.js",
+    "main.js.map": "/open_source_ideas/static/js/main.3145a1c5.chunk.js.map",
+    "runtime-main.js": "/open_source_ideas/static/js/runtime-main.f10fbc76.js",
+    "runtime-main.js.map": "/open_source_ideas/static/js/runtime-main.f10fbc76.js.map",
+    "static/css/2.69121389.chunk.css": "/open_source_ideas/static/css/2.69121389.chunk.css",
+    "static/js/2.3de9addd.chunk.js": "/open_source_ideas/static/js/2.3de9addd.chunk.js",
+    "static/js/2.3de9addd.chunk.js.map": "/open_source_ideas/static/js/2.3de9addd.chunk.js.map",
+    "index.html": "/open_source_ideas/index.html",
+    "precache-manifest.71c8b61beac7985c643b37886445d31a.js": "/open_source_ideas/precache-manifest.71c8b61beac7985c643b37886445d31a.js",
+    "service-worker.js": "/open_source_ideas/service-worker.js",
+    "static/css/2.69121389.chunk.css.map": "/open_source_ideas/static/css/2.69121389.chunk.css.map",
+    "static/css/main.c33e7dbc.chunk.css.map": "/open_source_ideas/static/css/main.c33e7dbc.chunk.css.map",
+    "static/js/2.3de9addd.chunk.js.LICENSE.txt": "/open_source_ideas/static/js/2.3de9addd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f10fbc76.js",
+    "static/css/2.69121389.chunk.css",
+    "static/js/2.3de9addd.chunk.js",
+    "static/css/main.c33e7dbc.chunk.css",
+    "static/js/main.3145a1c5.chunk.js"
+  ]
+}
