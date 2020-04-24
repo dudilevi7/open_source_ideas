@@ -9,15 +9,19 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+        reload : false
       };
+  }
+  onLogoClick = ()=> {
+    this.setState({reload : !this.state.reload})
+    
   }
   render() {
     return (
-    <div className="App">
-      <Logo/>
-      <Issues/>
-    </div>
+      <div className="App">
+        <Logo onLogoClick = {this.onLogoClick}/>
+        <Issues key = {String(this.state.reload)}/>
+      </div>
     );
   }
 }

@@ -1,5 +1,6 @@
 {
   "name": "open-source-ideas",
+  "homepage": "http://dudilevi7.github.io/open_source_ideas",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,13 +13,16 @@
     "react-animation": "^1.2.2",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-select": "^3.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
