@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: row;
 }
+
 #issuesArray {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* background-color: lawngreen; */
 }
 #search{
     margin-top: 10px;
@@ -19,6 +19,8 @@
 
 #issue{
   width: 80%;
+  margin: 20px;
+  align-self: center;
 }
 
 a{
@@ -29,7 +31,12 @@ a{
 li ,ul {
    text-align: start;
 }
-
+#tags {
+    margin : 15px;
+}
+#bodyText {
+    margin : 20px;
+}
 #issueTitle{
         font-size: 30px;
         border-radius: 5px;
@@ -47,4 +54,72 @@ li ,ul {
 }
 Button{
     margin-left: 20px;
+}
+
+@media only screen and (max-width: 650px) {
+    #issuesContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    #search{
+        margin: 7px 0px 0px 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-self: flex-start;
+    }
+    #issue{
+        width: 90%;
+        margin : 10px 10px 10px 7px;
+        align-self: center;
+      }
+    #issueTitle{
+        font-size: 20px;
+        border-radius: 5px;
+        padding : 5px;
+        margin: 0px;
+        background-color: #f7f7f7;
+        border: whitesmoke;
+        border-style: solid;
+        border-width: 1px;
+    }
+    #bodyText {
+        margin: 0px;
+    }
+    #tags {
+       margin : 10px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    a{
+        background-color: #f7f7f7;
+        padding: 3px;
+        border-radius: 4px;
+        font-size: 15px;
+    }
+    li {
+       font-size: 15px;
+       text-align: start;
+    }
+    p{
+        font-size: 15px;
+    }
+    #buttons {
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+        margin-top: 10px;
+    }
+    #commentsBtn{
+        font-size: 13px;
+        width: 10rem;
+    }
+    #gitBtn{
+        font-size: 13px;
+        width: 10rem;
+    }
 }

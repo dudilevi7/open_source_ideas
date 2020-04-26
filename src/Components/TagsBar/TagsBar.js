@@ -43,16 +43,17 @@ class TagsBar extends Component {
         var tagsTemp = getNotEmptyTags(this.state.tags,this.props.issuesArr) 
 
         const tagsArr = tagsTemp.map((user,i)=>{
-            return   <ListGroup.Item as="li" href={ tagsTemp[i].name} key = {i} onClick = {()=>this.onLabelClick(tagsTemp[i].name)}>
-            {tagsTemp[i].name}
+            return   <ListGroup.Item  href={ tagsTemp[i].name} key = {i} onClick = {()=>this.onLabelClick(tagsTemp[i].name)}>
+            <div id = "items">{tagsTemp[i].name} </div>
         </ListGroup.Item>
         });
         return (
             <div id = "tagsBarContainer">
-                <h4>Tags</h4>
-                <ListGroup as="ul" defaultActiveKey="AllIdeas">
-                <ListGroup.Item as="li" href="AllIdeas" key = "00" onClick = {()=>this.onLabelClick("All")}>
-                      All ideas
+                <h4 id = "h4Desktop">Tags</h4>
+                <h4 id = "h4Mobile">Filter by Tags</h4>
+                <ListGroup id = "listGroup" as="ul" defaultActiveKey="AllIdeas">
+                <ListGroup.Item id = "all" href="AllIdeas" key = "00" onClick = {()=>this.onLabelClick("All")}>
+                  <div id = "allItems">All ideas </div>
                 </ListGroup.Item>
                     {tagsArr}
                     </ListGroup>

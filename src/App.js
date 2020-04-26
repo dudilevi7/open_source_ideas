@@ -10,13 +10,16 @@ class App extends Component {
     super(props);
     this.state = {
         reload : false
-      };
+      }
   }
+
+
   onLogoClick = ()=> {
     this.setState({reload : !this.state.reload})
     
   }
   render() {
+  
     return (
       <div className="App">
         <Logo onLogoClick = {this.onLogoClick}/>

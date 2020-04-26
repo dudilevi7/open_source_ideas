@@ -1,3 +1,8 @@
 #selectTitleInput{
     width: 20rem;
 }
+@media only screen and (max-width: 850px) {
+        #selectTitleInput{
+               width: 12rem;
+        }
+}

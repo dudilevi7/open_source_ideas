@@ -75,17 +75,17 @@ class Issues extends  Component {
         var issuesTemp = this.state.issues;
         const issuesArr = issuesTemp.map((user,i)=>{
             return (
-                    <Card id = "issue" style = {{margin : '20px' }} key ={i}>
+                    <Card id = "issue" key ={i}>
                     <Card.Body>
                         <Card.Title id = "issueTitle" style = {{cursor : 'pointer',color : '#0275d8',textDecoration : 'underline'}} 
                         onClick = {()=> this.onIssueClicked(issuesTemp[i])}>{issuesTemp[i].title}</Card.Title>
-                        <div style ={{color : '#ff0000', margin :'15px' }} 
+                        <div id = "tags"
                              dangerouslySetInnerHTML = {{__html : marked(getFixTags(issuesTemp[i]))}}></div>              
-                      {this.state.showBody?  <div id = "bodyText" style = {{margin : '10px'}}
+                      {this.state.showBody?  <div id = "bodyText"
                              dangerouslySetInnerHTML = {{__html : marked(issuesTemp[i].body)}}></div> : ""}
                         <div id = 'buttons'>
-                          <Button variant = "dark" onClick = {()=> this.onCommentsClick(issuesTemp[i].comments,i)}>{issuesTemp[i].comments} comments</Button>
-                          <Button onClick ={()=>window.open(issuesTemp[i].html_url, '_blank').focus()}>View on GitHub</Button>
+                          <Button id = "commentsBtn" variant = "dark" onClick = {()=> this.onCommentsClick(issuesTemp[i].comments,i)}>{issuesTemp[i].comments} comments</Button>
+                          <Button id = "gitBtn" onClick ={()=>window.open(issuesTemp[i].html_url, '_blank').focus()}>View on GitHub</Button>
                         </div>
                         {this.state.currIndex === i ? 
                                 <div id={"div"+i} style = {{margin : '10px'}}>

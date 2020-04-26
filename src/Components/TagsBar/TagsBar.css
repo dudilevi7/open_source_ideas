@@ -3,3 +3,35 @@
     margin: 0px 0px 0px 10px;
     cursor: pointer;
 }
+#h4Mobile{
+    display: none;
+}
+@media only screen and (max-width: 650px) {
+    #tagsBarContainer {
+        padding: 0px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+    }
+    #listGroup {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #h4Mobile{
+        display: block;
+        text-align: left;
+        font-size: 10px;
+    }
+    #h4Desktop{
+        display: none;
+    }
+    #items{
+        font-size: 10px;
+    }
+    #allItems{
+        font-weight: bold;
+        font-size: 10px;
+    }
+   
+}

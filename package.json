@@ -8,6 +8,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
+    "gh-pages": "^2.2.0",
     "marked": "^0.8.2",
     "react": "^16.13.1",
     "react-animation": "^1.2.2",
